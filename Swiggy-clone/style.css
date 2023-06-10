@@ -1,0 +1,310 @@
+
+*{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin: 0px;
+
+}
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 50px 15px 50px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    /* height: 20vh; */
+    z-index: 200;
+}
+#link{
+    width: 50%;
+}
+#nav-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+#nav-links li{
+    list-style: none;
+}
+#logo img{
+    height:  50px;
+    width: 50px;
+    margin-left: -70px;
+}
+#left-side{
+    display: flex;
+    justify-content: center;
+    width: 36%;
+    align-items: center;
+
+}
+#location p{
+    font-size: small;
+    color: grey;
+}
+#location a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-left: 15px;
+}
+#location a:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+#nav-links li span .log{
+    font-size: larger;
+}
+#nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 525;
+}
+#nav-links li a sup{
+    color: orange;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 0px 0px 2px;
+}
+#location p #span{
+    cursor: pointer;
+}
+#nav-links li a:hover{
+    color: orange;
+}
+div{
+    display: block;
+}
+
+#horbox{
+    width: 100%;
+    height: 340px;
+    background-color: #171a29;
+    margin: 0 0px 0 0px;
+    position: relative;
+    /* margin: 0 -10px 0 -10px; */
+}
+
+.card img{
+    width: 260px;
+    height: 260px;
+    cursor: pointer;
+}
+.card img:hover{
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: transform .5s cubic-bezier(.215,.61,.355,1);
+    backface-visibility: visible;
+}
+
+#offer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 110px;
+}
+
+#button1{
+    position: absolute;
+    top: 44%;
+    padding: 12px;
+    font-size: 20px;
+    color: rgb(78, 75, 75);
+    border-radius: 50%;
+    border: none;
+    right: 8.5%;
+}
+#hrbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+    border-bottom: 1px outset blanchedalmond;
+}
+#ul li{
+    list-style: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-left: 20px;
+}
+#ul #fil{
+    font-weight: bolder;
+    color: black;
+}
+#ul .lis{
+    color: grey;
+}
+
+#left{
+    width: 40%;
+}
+#left p{
+    font-size: 26px;
+    font-weight: bold;
+}
+#right{
+    width: 80%;
+    margin: auto;
+}
+#ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.product{
+    width: 254px;
+    height: 252px;
+    padding: 20px 20px 57px;
+    position: relative;
+    border: 1px solid #fff;
+    contain: content;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.image-container{
+    width: 100%;
+}
+.image-container img{
+    width: 100%;
+}
+.name p{
+    font-size: 17px;
+    font-weight: 500;
+    word-break: break-word;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.style p{
+    color: #686b78;
+    font-size: 13px;
+    margin-top: 0px;
+}
+.details{
+    display: flex;
+    margin-top: 24px;
+    font-size: 12px;
+    justify-content: space-between;
+    color: #535665;
+}
+.details .btn button{
+    background-color: #48c479;
+    color: #fff;
+    border: 0px;
+    outline: 0px;
+    margin-top: -5px;
+    padding: 4px 7px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.product:hover{
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgba(218,220,230,.6);
+}
+
+
+#container{
+    width: 90%;
+    margin: auto;
+    margin-left: 125px;
+    margin-bottom: 50px;
+}
+
+
+
+#container #cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.product{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+#documents{
+    width: 100%;
+    background-color: black;
+    margin-right: -10px;
+}
+
+#documents .legal li, #container2 #contain li{
+    list-style: none;
+    padding-bottom: 25px;
+    
+}
+#documents .legal .uldata li a, #container2 #contain .uldata1 li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    margin-left: -40px;
+    
+}
+.legal .heading, #contain .heading1{
+    color: gray;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#container1{
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    
+}
+#container1 .legal{
+    width: 25%;
+    
+}
+#container1, #container2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #4d4d4d;
+}
+#container2{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#footer{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer #copy{
+    color: white;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+#footer #icons .ii img{
+    width: 24px;
+    aspect-ratio: auto 24 / 24;
+    height: 24px;
+    padding-left: 24px;
+}
+#footer #swiggylogo img{
+    width: 142px;
+}
+
+
