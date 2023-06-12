@@ -1,0 +1,730 @@
+nasru@annapuri MINGW64 ~
+$ cd
+
+nasru@annapuri MINGW64 ~
+$ cd .
+
+nasru@annapuri MINGW64 ~
+$ mkdir LetsLearnGit
+
+nasru@annapuri MINGW64 ~
+$ cd LetsLearnGit
+
+nasru@annapuri MINGW64 ~/LetsLearnGit
+$ git init
+Initialized empty Git repository in C:/Users/nasru/LetsLearnGit/.git/
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ ls
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ ls -a
+./  ../  .git/
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Netflix-clone/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git add Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Netflix-clone/images/Netflix-symbol.jpg
+        new file:   Netflix-clone/images/background.jpg
+        new file:   Netflix-clone/images/kids.png
+        new file:   Netflix-clone/images/logo.png
+        new file:   Netflix-clone/images/powered_by_logo.svg
+        new file:   Netflix-clone/images/st.png
+        new file:   Netflix-clone/images/ttp.png
+        new file:   Netflix-clone/images/tv.png
+        new file:   Netflix-clone/index.html
+        new file:   Netflix-clone/style.css
+
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git commit -m "upload Netflix-clone"
+[master (root-commit) 713cc99] upload Netflix-clone
+ 10 files changed, 629 insertions(+)
+ create mode 100644 Netflix-clone/images/Netflix-symbol.jpg
+ create mode 100644 Netflix-clone/images/background.jpg
+ create mode 100644 Netflix-clone/images/kids.png
+ create mode 100644 Netflix-clone/images/logo.png
+ create mode 100644 Netflix-clone/images/powered_by_logo.svg
+ create mode 100644 Netflix-clone/images/st.png
+ create mode 100644 Netflix-clone/images/ttp.png
+ create mode 100644 Netflix-clone/images/tv.png
+ create mode 100644 Netflix-clone/index.html
+ create mode 100644 Netflix-clone/style.css
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git log
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05 (HEAD -> master)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Netflix-clone/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Netflix-clone/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Swiggy-clone/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git add Swiggy-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Swiggy-clone/images/Logo.webp
+        new file:   Swiggy-clone/images/aslinellore.webp
+        new file:   Swiggy-clone/images/biryani1.webp
+        new file:   Swiggy-clone/images/biryanii.webp
+        new file:   Swiggy-clone/images/cake.webp
+        new file:   Swiggy-clone/images/curry.webp
+        new file:   Swiggy-clone/images/dosa.webp
+        new file:   Swiggy-clone/images/fblogo.webp
+        new file:   Swiggy-clone/images/foodcorner.webp
+        new file:   Swiggy-clone/images/hotelrayalaseemas.jpg
+        new file:   Swiggy-clone/images/hotelriyaz.webp
+        new file:   Swiggy-clone/images/icon-AppStore.webp
+        new file:   Swiggy-clone/images/icon-GooglePlay.webp
+        new file:   Swiggy-clone/images/icon-instagram.webp
+        new file:   Swiggy-clone/images/icon-pinterest.webp
+        new file:   Swiggy-clone/images/icon-twitter.webp
+        new file:   Swiggy-clone/images/kfc.jpg
+        new file:   Swiggy-clone/images/mcdonalds.webp
+        new file:   Swiggy-clone/images/nan.webp
+        new file:   Swiggy-clone/images/navbiryani.webp
+        new file:   Swiggy-clone/images/pizza.webp
+        new file:   Swiggy-clone/images/pizzahut.webp
+        new file:   Swiggy-clone/images/poha.webp
+        new file:   Swiggy-clone/images/pulihora.webp
+        new file:   Swiggy-clone/images/rr.webp
+        new file:   Swiggy-clone/images/ruchulu.webp
+        new file:   Swiggy-clone/images/spice.webp
+        new file:   Swiggy-clone/images/swiggy-1.svg
+        new file:   Swiggy-clone/index.html
+        new file:   Swiggy-clone/style.css
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Netflix-clone/index.html
+
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git commit -m "initial commit"
+[master a52297c] initial commit
+ 30 files changed, 775 insertions(+)
+ create mode 100644 Swiggy-clone/images/Logo.webp
+ create mode 100644 Swiggy-clone/images/aslinellore.webp
+ create mode 100644 Swiggy-clone/images/biryani1.webp
+ create mode 100644 Swiggy-clone/images/biryanii.webp
+ create mode 100644 Swiggy-clone/images/cake.webp
+ create mode 100644 Swiggy-clone/images/curry.webp
+ create mode 100644 Swiggy-clone/images/dosa.webp
+ create mode 100644 Swiggy-clone/images/fblogo.webp
+ create mode 100644 Swiggy-clone/images/foodcorner.webp
+ create mode 100644 Swiggy-clone/images/hotelrayalaseemas.jpg
+ create mode 100644 Swiggy-clone/images/hotelriyaz.webp
+ create mode 100644 Swiggy-clone/images/icon-AppStore.webp
+ create mode 100644 Swiggy-clone/images/icon-GooglePlay.webp
+ create mode 100644 Swiggy-clone/images/icon-instagram.webp
+ create mode 100644 Swiggy-clone/images/icon-pinterest.webp
+ create mode 100644 Swiggy-clone/images/icon-twitter.webp
+ create mode 100644 Swiggy-clone/images/kfc.jpg
+ create mode 100644 Swiggy-clone/images/mcdonalds.webp
+ create mode 100644 Swiggy-clone/images/nan.webp
+ create mode 100644 Swiggy-clone/images/navbiryani.webp
+ create mode 100644 Swiggy-clone/images/pizza.webp
+ create mode 100644 Swiggy-clone/images/pizzahut.webp
+ create mode 100644 Swiggy-clone/images/poha.webp
+ create mode 100644 Swiggy-clone/images/pulihora.webp
+ create mode 100644 Swiggy-clone/images/rr.webp
+ create mode 100644 Swiggy-clone/images/ruchulu.webp
+ create mode 100644 Swiggy-clone/images/spice.webp
+ create mode 100644 Swiggy-clone/images/swiggy-1.svg
+ create mode 100644 Swiggy-clone/index.html
+ create mode 100644 Swiggy-clone/style.css
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Netflix-clone/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git log
+commit a52297c56949076c9b473831fb3396aa00736707 (HEAD -> master)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:04:54 2023 +0530
+
+    initial commit
+
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Netflix-clone/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git add .
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git commit -m "modified Netflix-clome"
+[master de3c32f] modified Netflix-clome
+ 1 file changed, 18 insertions(+), 20 deletions(-)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git log
+commit de3c32fa9650c9298fd5100096519a26f8405169 (HEAD -> master)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:25:28 2023 +0530
+
+    modified Netflix-clome
+
+commit a52297c56949076c9b473831fb3396aa00736707
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:04:54 2023 +0530
+
+    initial commit
+
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git checkout 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Note: switching to '713cc99dc8903b50d7e7f83f7ae93d413070da05'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 713cc99 upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit ((713cc99...))
+$ git checkout master
+Previous HEAD position was 713cc99 upload Netflix-clone
+Switched to branch 'master'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git checkout 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Note: switching to '713cc99dc8903b50d7e7f83f7ae93d413070da05'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 713cc99 upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit ((713cc99...))
+$ git branch
+* (HEAD detached at 713cc99)
+  master
+
+nasru@annapuri MINGW64 ~/LetsLearnGit ((713cc99...))
+$ git log
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05 (HEAD)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit ((713cc99...))
+$ git checkout master
+Previous HEAD position was 713cc99 upload Netflix-clone
+Switched to branch 'master'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ get branch main
+bash: get: command not found
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ get branch
+bash: get: command not found
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git branch main
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git branch
+  main
+* master
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git checkout main
+Switched to branch 'main'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git checkout -b nasru/root
+Switched to a new branch 'nasru/root'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git status
+On branch nasru/root
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Swiggy-clone/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git add Swiggy-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git commit -m "modified Swiggy-clone"
+[nasru/root 4f5b35e] modified Swiggy-clone
+ 1 file changed, 6 deletions(-)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git log
+commit 4f5b35e6f09c4b2fc76e3d044a4e4939cd2eb1a6 (HEAD -> nasru/root)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:40:30 2023 +0530
+
+    modified Swiggy-clone
+
+commit de3c32fa9650c9298fd5100096519a26f8405169 (master, main)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:25:28 2023 +0530
+
+    modified Netflix-clome
+
+commit a52297c56949076c9b473831fb3396aa00736707
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:04:54 2023 +0530
+
+    initial commit
+
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git checkout dev
+error: pathspec 'dev' did not match any file(s) known to git
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git branch
+  main
+  master
+* nasru/root
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (nasru/root)
+$ git checkout main
+Switched to branch 'main'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git merge nasru/root
+Updating de3c32f..4f5b35e
+Fast-forward
+ Swiggy-clone/index.html | 6 ------
+ 1 file changed, 6 deletions(-)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git log
+commit 4f5b35e6f09c4b2fc76e3d044a4e4939cd2eb1a6 (HEAD -> main, nasru/root)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:40:30 2023 +0530
+
+    modified Swiggy-clone
+
+commit de3c32fa9650c9298fd5100096519a26f8405169 (master)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:25:28 2023 +0530
+
+    modified Netflix-clome
+
+commit a52297c56949076c9b473831fb3396aa00736707
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:04:54 2023 +0530
+
+    initial commit
+
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git checkout master
+Switched to branch 'master'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git log
+commit de3c32fa9650c9298fd5100096519a26f8405169 (HEAD -> master)
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:25:28 2023 +0530
+
+    modified Netflix-clome
+
+commit a52297c56949076c9b473831fb3396aa00736707
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 22:04:54 2023 +0530
+
+    initial commit
+
+commit 713cc99dc8903b50d7e7f83f7ae93d413070da05
+Author: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date:   Sat Jun 10 21:55:03 2023 +0530
+
+    upload Netflix-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git merge main
+Updating de3c32f..4f5b35e
+Fast-forward
+ Swiggy-clone/index.html | 6 ------
+ 1 file changed, 6 deletions(-)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ touch .gitignore
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        secretkey.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git remote -v
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git remote add origin https://github.com/nasruddinannapuri/letsLearnGit.git
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git remote -v
+origin  https://github.com/nasruddinannapuri/letsLearnGit.git (fetch)
+origin  https://github.com/nasruddinannapuri/letsLearnGit.git (push)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git branch -m master
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 56, done.
+Counting objects: 100% (56/56), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (56/56), 2.06 MiB | 1.95 MiB/s, done.
+Total 56 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/nasruddinannapuri/letsLearnGit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git add Swiggy-clone
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git commit -m "space reduction Swiggy-clone"
+[master 2a7062d] space reduction Swiggy-clone
+ 1 file changed, 1 insertion(+), 14 deletions(-)
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 516 bytes | 516.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nasruddinannapuri/letsLearnGit.git
+   4f5b35e..2a7062d  master -> master
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (master)
+$ git checkout main
+Switched to branch 'main'
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/nasruddinannapuri/letsLearnGit/pull/new/main
+remote:
+To https://github.com/nasruddinannapuri/letsLearnGit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+nasru@annapuri MINGW64 ~/LetsLearnGit (main)
+$ cd ..
+
+nasru@annapuri MINGW64 ~
+$ git clone https://github.com/nasruddinannapuri/First-Contribution.git
+Cloning into 'First-Contribution'...
+remote: Enumerating objects: 17, done.
+remote: Total 17 (delta 0), reused 0 (delta 0), pack-reused 17
+Receiving objects: 100% (17/17), done.
+
+nasru@annapuri MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ First-Contribution/
+ IntelGraphicsProfiles/
+ LetsLearnGit/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+[filter "lfs"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ vim readme.md
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ cat readme.md
+# First-Contribution
+Hi this is Aryan and this is my contribution.
+This is my first contribution
+hello anuj thanks for this video. Very Helpful
+Hello guys
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git add readme.md
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git commit -m "updated readme.md"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git push
+Everything up-to-date
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git add readme.md
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git commit -m "readme.md updated"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git add README.md
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git commit -m "readme.md updated"
+[master 210aa93] readme.md updated
+ 1 file changed, 1 insertion(+)
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nasruddinannapuri/First-Contribution.git
+   c49049d..210aa93  master -> master
+
+nasru@annapuri MINGW64 ~/First-Contribution (master)
+$
