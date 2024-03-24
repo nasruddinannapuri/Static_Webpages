@@ -4,8 +4,8 @@ This repository contains replicas of the homepage interfaces of Netflix and Swig
 
 ## Preview
 
-<img src="/Netflix-clone/netflix-preview.png" alt="Netflix Preview" width="50%" height="50%">
-<img src="/Swiggy-clone/swiggy-preview.png" alt="Swiggy Preview" width="50%" height="50%">
+<img src="netflix-preview.png" alt="Netflix Preview" width="50%" height="50%">
+<img src="swiggy-preview.png" alt="Swiggy Preview" width="50%" height="50%">
 
 ## About
 
